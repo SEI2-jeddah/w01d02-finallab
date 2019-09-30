@@ -1,6 +1,6 @@
 var score = 0; 
 let name = prompt("what is your name?")
-console.log("Nice to meet you " + Name)
+console.log("Nice to meet you " + name)
 let year = prompt(" What year would you like to go to?")
 if (year >= 2015){
 	console.log("I see you're a fan of Back to the Future 2");
