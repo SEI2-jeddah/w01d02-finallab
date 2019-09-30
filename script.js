@@ -1,27 +1,51 @@
-var input = prompt("what is your name?");
+var input = prompt("Wlcome to T.H pizza restaurant , would you like to order ? (y/n) " );
 console.log(input);
 
-var futureYr = prompt("Nice to meet you, " +input+ ".What year would you like to go to? (YYYY)");
 
-if(futureYr >= 2015)
-{
-    let firstChoice = prompt("I see you're a fan of Back to the Future 2. Would you rather deal with Biff, or Griff? (B/G)");
-    if(firstChoice === "B")
-    {
-        let secondChoice = prompt("Hmm, interesting. Biff is angry and has a cane. Do you stand and fight, or run away like a coward? (S/R)");
+if (input === "y" || input === "Y" ) {
 
-        if(secondChoice === "S")
-        {
-            alert("Stand and fight")
+    var choiceOne = prompt("would you like to have papparoni");
+    if (choiceOne === "y") {
+      var choiceTwo = prompt ("would you like to have onion?");
+        if (choiceTwo === "y") {
 
-            alert("Good choice. Biff is old and feeble at this point. You push him over and he falls in a pile of manure.")
+            choiceThree = prompt ("would you like to have olive ?");
+            if (choiceThree === "y") {
+                    choiceFour = prompt("would you like to have tomato ?");
+
+                      if (choiceFour == "y") {
+
+
+                          var choiceSix = prompt("would you like to have exta cheese ?");
+                            if (choiceSix === "y") {
+                                alert("one Pizza with papparoni , onion , olive amd tomato with extra cheese");
+                            } else {
+                              alert("one Pizza with papparoni , onion , olive amd tomato is ready");
+
+
+                            }
+
+
+
+
+                      }else {
+                        alert("here's your pizza with papparoni,onion and olive");
+                      }
+
+            }else {
+              alert("Cool , here's your pizza with onion and papparoni");
+            }
+
+
+        }else {
+          alert("here's your pizza with only papparoni");
         }
-        else if (secondChoice === "R")
-        {
-            alert("Run like a coward")
-            alert("You get away, but your future son Marty Jr. is heckled for the rest of his days for his dad's cowardice.")
- 
-        }
+
+    }else {
+      alert("Cool here's your empty pizza , enjoy it ");
     }
 
+
+} else {
+  alert("Alright , see you soon");
 }
